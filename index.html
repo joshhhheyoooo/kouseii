@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Confession</title>
+<title>helloo</title>
 
 <!-- Google Fonts: Poppins for body text, Playfair Display for headings & the letter -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -355,8 +355,8 @@ body {
 
 .envelope {
   position: relative;
-  width: min(90vw, 380px);
-  height: 250px;
+  width: min(90vw, 520px);
+  height: 340px;
   cursor: pointer;
   perspective: 1200px;
 }
@@ -379,7 +379,7 @@ body {
   background: var(--c-paper);
   border-radius: var(--radius-sm) var(--radius-sm) 4px 4px;
   box-shadow: 0 10px 24px rgba(120, 90, 140, 0.2);
-  padding: 26px 22px;
+  padding: 30px;
   overflow-y: auto;
   transform: translateY(10%);
   opacity: 0;
@@ -389,7 +389,7 @@ body {
 .letter-text {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 0.98rem;
+  font-size: 1.04rem;
   line-height: 1.85;
   color: var(--c-plum);
   margin: 0;
@@ -407,7 +407,7 @@ body {
 .envelope-flap {
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 130px;
+  height: 52%;
   background: linear-gradient(155deg, var(--c-blush), var(--c-lavender));
   clip-path: polygon(0 0, 100% 0, 50% 82%);
   border-radius: var(--radius-md) var(--radius-md) 0 0;
@@ -421,11 +421,11 @@ body {
 
 .wax-seal {
   position: absolute;
-  top: 96px;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 46px;
-  height: 46px;
+  width: clamp(46px, 9vw, 56px);
+  height: clamp(46px, 9vw, 56px);
   border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, #e88fa8, var(--c-rose-deep) 70%);
   display: flex;
@@ -724,7 +724,10 @@ body {
   .glass-card { padding: 28px 22px; border-radius: var(--radius-md); }
   .story-section { padding: 70px 18px; }
   .music-panel { width: 220px; }
-  .envelope { height: 220px; }
+  .envelope {
+    width: min(92vw, 440px);
+    height: clamp(240px, 58vw, 300px);
+  }
 }
 
 @media (max-width: 380px) {
@@ -742,8 +745,8 @@ body {
   <!-- ============ LANDING ============ -->
   <section id="landing" class="landing">
     <div class="landing-inner">
-      <h1 class="hi-text" id="hiText">Hi.</h1>
-      <p class="reveal-line" id="landingMessage">I made something because there's something I've been wanting to tell you.</p>
+      <h1 class="hi-text" id="hiText">Hiii.</h1>
+      <p class="reveal-line" id="landingMessage">Me made something because there's something I've been wanting to tell you. (i hope this makes u smile)</p>
       <button class="btn btn-primary reveal-line" id="continueBtn">Continue</button>
     </div>
     <div class="scroll-hint" aria-hidden="true">
@@ -760,8 +763,8 @@ body {
         <span class="eyebrow">01</span>
         <h2 class="section-title">It Started With Something Small</h2>
         <p class="section-text">
-          We happened to get queued together in Mobile Legends one day. 
-          I wasn't expecting much, but somehow, you caught my attention.
+          We happened to get queued together in Valorant one day because of our mutual friend (shu). 
+          I wasn't expecting much, but somehow, you caught really my attention.
         </p>
       </div>
     </section>
@@ -777,9 +780,9 @@ body {
         <ul class="attention-list">
           <li class="fade-up"><span class="attention-icon">✧</span> Your voice. It felt genuine, the kind that isn't performed.</li>
           <li class="fade-up"><span class="attention-icon">✧</span> Your style. You clearly know who you are.</li>
-          <li class="fade-up"><span class="attention-icon">✧</span> Your vibe. Warm, easy, the kind that puts people at ease.</li>
+          <li class="fade-up"><span class="attention-icon">✧</span> Your vibe. Warm, easy, the kind that puts people at ease, and also i love how straightforward you are.</li>
           <li class="fade-up"><span class="attention-icon">✧</span> You never tried to stand out, yet somehow you became the person I noticed the most.</li>
-          <li class="fade-up"><span class="attention-icon">✧</span> The more we played together, the more I realized you were different. Somehow, you made even the most ordinary games feel special.</li>
+          <li class="fade-up"><span class="attention-icon">✧</span> The more we talked together, the more I realized you were different. Somehow, you made even the most ordinary days feel special.</li>
         </ul>
       </div>
     </section>
@@ -788,87 +791,101 @@ body {
     <section class="story-section" data-index="03">
       <div class="glass-card fade-up">
         <span class="eyebrow">03</span>
-        <h2 class="section-title">The Truth</h2>
+        <h2 class="section-title">The Reality</h2>
         <div class="truth-list">
-          <p class="truth-line fade-up">We haven't met.</p>
-          <p class="truth-line fade-up">I don't know your favorite color.</p>
-          <p class="truth-line fade-up">I don't know your favorite food.</p>
-          <p class="truth-line fade-up">I don't know what makes you laugh the hardest.</p>
-          <p class="truth-line truth-highlight fade-up">And maybe that's exactly why I wanted to make this.</p>
-          <p class="truth-line fade-up">Not because I already know everything about you&hellip;</p>
-          <p class="truth-line truth-highlight fade-up">But because I'd genuinely like the chance to.</p>
+<p class="truth-line fade-up">I've already learned a few things about you.</p>
+<p class="truth-line fade-up">Your favorite color, the food you love,</p>
+<p class="truth-line fade-up">and the little things that make you laugh.</p>
+<p class="truth-line truth-highlight fade-up">But I know there's still so much more to you than what I've learned so far.</p>
+<p class="truth-line fade-up">There's still so much I want to understand,</p>
+<p class="truth-line fade-up">the things that make you who you are, even the parts you rarely show.</p>
+<p class="truth-line truth-highlight fade-up">And I'd love to keep getting to know you, at your own pace, with no need to rush anything.</p>
         </div>
       </div>
     </section>
 
     <!-- ============ SECTION 4 ============ -->
-    <section class="story-section" data-index="04">
-      <div class="glass-card fade-up">
-        <span class="eyebrow">04</span>
-        <h2 class="section-title">About this</h2>
-        <p class="section-text">
-          This website isn't meant to make you feel obligated to respond, or to feel like you owe
-          me anything at all.
-        </p>
-        <p class="section-text section-emphasis">
-          I thought being honest was better than wondering "what if?" forever.
-        </p>
-      </div>
-    </section>
+<section class="story-section" data-index="04">
+  <div class="glass-card fade-up">
+    <span class="eyebrow">04</span>
+    <h2 class="section-title">About this</h2>
+    <p class="section-text">
+      I know you already understand my intentions, so this isn't me trying to prove anything or make you feel like you have to do something about it.
+    </p>
+    <p class="section-text section-emphasis">
+      I just wanted to do something that shows you how genuine I am about getting to know and love you.
+    </p>
+    <p class="section-text">
+      There's no need to rush or force anything. I'd rather let things unfold naturally and show you through my actions that I mean what I say.
+    </p>
+  </div>
+</section>
 
     <!-- ============ INTERACTIVE LETTER ============ -->
-    <section class="story-section envelope-section">
-      <div class="fade-up envelope-wrapper">
-        <p class="envelope-hint">There's a little more, if you'd like to read it.</p>
-        <div class="envelope" id="envelope">
-          <div class="envelope-back"></div>
-          <div class="envelope-letter" id="envelopeLetter">
-            <p class="letter-text">
-              I've rewritten this more times than I'd like to admit.<br><br>
-              I'm not trying to make you feel like you have to feel a certain way. I just didn't
-              want to keep this quietly to myself and wonder later if I should have said
-              something.<br><br>
-              I don't know much about you yet &mdash; not really pa. But what I've seen has been
-              enough to make me curious, and curiosity, when it's honest, felt worth acting on.<br><br>
-              So here it is, plainly: I think you're someone worth getting to know.
-            </p>
-            <span class="letter-signature">&mdash; sent with a little courage i guess?</span>
-          </div>
-          <div class="envelope-flap"></div>
-          <div class="wax-seal" id="waxSeal">
-            <span>&hearts;</span>
-          </div>
-        </div>
-        <p class="envelope-hint envelope-hint-tap">tap the envelope to open it</p>
+<section class="story-section envelope-section" aria-label="A letter for you">
+  <div class="envelope-wrapper fade-up">
+    <p class="envelope-hint">A little something I wanted to share with you</p>
+    <div class="envelope" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="envelope-letter" id="envelopeLetter">
+        <p class="letter-text">
+          I've been thinking about what to write here, and honestly, it's a little hard to put everything into words.<br><br>
+
+          I know you already understand my intentions, and I hope you know that I mean them. I'm not here just because I like the feeling of having someone. I'm here because it's you, and there's something about you that makes me want to know you more.<br><br>
+
+          I like the little things about you, the way you express yourself, the way you make me smile without even trying, and even the parts of you that you might not always feel confident about. I know I still have a lot to learn about you, and I look forward to discovering more of what makes you who you are.<br><br>
+
+          I just want us to have the chance to know each other better, to make more memories, to laugh over the smallest things, and to be someone you can feel comfortable being yourself around.<br><br>
+
+          I can't promise that I'll always know the right things to say or do, but I can be honest with you, listen to you, and make an effort to understand you better. I want what we have to be something genuine, something we can both look back on and be happy we gave a chance.<br><br>
+
+          And if there's one thing I want you to remember, it's that I'm genuinely happy I got to meet you. I'm looking forward to all the little things we haven't experienced together yet.
+        </p>
+        <span class="letter-signature">— made with you in mind hshs</span>
       </div>
-    </section>
+      <div class="envelope-flap"></div>
+      <div class="wax-seal" aria-hidden="true">♡</div>
+    </div>
+    <p class="envelope-hint envelope-hint-tap">Tap to open</p>
+  </div>
+</section>
+
 
     <!-- ============ ENDING ============ -->
-    <section class="story-section ending-section">
-      <div class="fade-up ending-inner">
-        <h2 class="ending-heading">Whether your answer is yes, maybe, or no&hellip;</h2>
-        <div class="ending-reveal" id="endingReveal">
-          <p>Thank you for taking the time to read this.</p>
-          <p>And thank you for unknowingly inspiring me to be brave enough to tell you how I feel.</p>
-        </div>
-      </div>
-    </section>
+<section class="story-section ending-section">
+  <div class="fade-up ending-inner">
+    <h2 class="ending-heading">And that's everything, for now...</h2>
+    <div class="ending-reveal" id="endingReveal">
+      <p>I hope you like this little website I've been creating for you.</p>
+      <p>I put a little piece of my thoughts into it, and I hope it made you smile, even just a little.</p>
+      <p>Thank you for being someone worth making this for. ♡</p>
+    </div>
+  </div>
+</section>
 
     <!-- ============ QUESTION ============ -->
-    <section class="story-section question-section">
-      <div class="glass-card fade-up question-card">
-        <h2 class="section-title question-title">So&hellip; would you be open to getting to know each other?</h2>
-        <div class="question-buttons">
-          <button class="btn btn-choice" id="btnYes">💖 I'd love to</button>
-          <button class="btn btn-choice btn-choice-secondary" id="btnMaybe">🌸 Maybe someday</button>
-        </div>
-        <div class="question-response" id="questionResponse" aria-live="polite"></div>
-      </div>
-    </section>
+
+<section class="story-section question-section">
+  <div class="glass-card fade-up question-card">
+    <h2 class="section-title question-title">
+      So... will you be my wife? ♡
+    </h2>
+    <div class="question-buttons">
+      <button class="btn btn-choice" id="btnYes">
+        ofc, husband
+      </button>
+      <button class="btn btn-choice btn-choice-secondary" id="btnMaybe">
+        let me think, love
+      </button>
+    </div>
+    <div class="question-response" id="questionResponse" aria-live="polite"></div>
+  </div>
+</section>
+
 
     <!-- ============ FOOTER ============ -->
     <footer class="site-footer">
-      <p>Made with pure honesty and intention.</p>
+      <p>Made with pure honesty and intention and lowkey tease u hshs.</p>
       <p>(screenshot your answer hshs.)</p>
     </footer>
 
@@ -877,7 +894,7 @@ body {
   <!-- ============ FLOATING MUSIC PLAYER ============ -->
   <div class="music-player" id="musicPlayer">
     <!-- Replace the src below with your own audio file to change the song -->
-    <audio id="audioEl" src="with you. [UiiWfiSZHJQ].mp3" preload="metadata" loop></audio>
+    <audio id="audioEl" src="keshi - Soft Spot (Official Music Video).mp3" preload="metadata" loop></audio>
 
     <button class="music-toggle" id="musicToggle" aria-label="Show music player">
       <span class="music-note">♪</span>
@@ -887,8 +904,8 @@ body {
       <div class="music-info">
         <span class="music-disc" id="musicDisc">♫</span>
         <div class="music-meta">
-          <span class="music-title">with you</span>
-          <span class="music-sub">this song reminds me of u</span>
+          <span class="music-title">soft spot</span>
+          <span class="music-sub">this song is dedicated for u</span>
         </div>
       </div>
       <div class="music-controls">
@@ -1117,8 +1134,8 @@ const btnMaybe = document.getElementById('btnMaybe');
 const questionResponse = document.getElementById('questionResponse');
 
 const RESPONSES = {
-  yes: "That means more to me than you probably realize. Thank you for giving this a chance \u2014 I'd love to talk whenever you're ready.",
-  maybe: "That's completely okay. There's no clock running on this. I'm just glad I finally said it \u2014 the rest can happen whenever it happens."
+  yes: "i love youuu \u2014 my wifeyy, i hope ur happy with me hshsh",
+  maybe: "that's omkiiee \u2014 the rest can happen whenever it happens hshsh"
 };
 
 let answerLocked = false;
